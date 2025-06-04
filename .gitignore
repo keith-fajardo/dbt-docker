@@ -1,2 +1,2 @@
-dbt/.env
-postgres/.env
+.env
+.user.yml

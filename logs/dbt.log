@@ -122,3 +122,19 @@ Parsing Error
 [0m12:27:19.540254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10947aa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10948b770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109408c50>]}
 [0m12:27:19.540555 [debug] [MainThread]: Flushing usage events
 [0m12:27:20.973353 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:14:36.311539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c453d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050f95b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050f9130>]}
+
+
+============================== 18:14:36.316310 | cd8d13a6-366c-44ff-ae1f-3814bd272c11 ==============================
+[0m18:14:36.316310 [info ] [MainThread]: Running with dbt=1.9.6
+[0m18:14:36.316845 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/keithfajardo/Documents/MyProjects/docker_training/dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt build -t .', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:14:36.317295 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/keithfajardo/Documents/MyProjects/docker_training/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:14:36.319610 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 0.065607294, "process_in_blocks": "0", "process_kernel_time": 0.177563, "process_mem_max_rss": "99418112", "process_out_blocks": "0", "process_user_time": 1.052001}
+[0m18:14:36.320095 [debug] [MainThread]: Command `dbt build` failed at 18:14:36.320006 after 0.07 seconds
+[0m18:14:36.320423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a1e630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fbf0e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050f9130>]}
+[0m18:14:36.320715 [debug] [MainThread]: Flushing usage events
+[0m18:14:37.722902 [debug] [MainThread]: An error was encountered while trying to flush usage events
