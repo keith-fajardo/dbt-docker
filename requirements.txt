@@ -1,0 +1,7 @@
+dbt-core
+dbt-postgres
+dbt-redshift
+dbt-snowflake
+dbt-bigquery
+dbt-trino
+pyarrow==18.0.0
