@@ -2,7 +2,13 @@
 
 This project is used to create a dbt-core image and container.
 
-A dbt image is already created using the Dockerhub Repository called keithfajardo/i-dbt-core:python3.12.10.
+A dbt image is already created using the Dockerhub Repository called `keithfajardo/i-dbt-core:python3.12.10`.
+
+If you want to just want to use this dockerhub image, you can run:
+```
+docker run keithfajardo/i-dbt-core:python3.12.10
+```
+
 
 ## Running the container
 Run the command to run the container:
