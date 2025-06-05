@@ -1,9 +1,11 @@
 #!/bin/bash
+source .env
+
 CONTAINER_NAME="c-dbt-core"
 DOCKERHUB_REPOSITORY=keithfajardo/ # Change this to your Docker Hub repository
 IMG_NAME=${DOCKERHUB_REPOSITORY}i-dbt-core:python3.12.10
 CLEAN=false
-CONTAINER_NETWORK="dbt-net"
+CONTAINER_NETWORK="dbt-net" # Change this if you want to use a different network name.
 
 function build_image() {
   if [[ "$CLEAN" == "true" ]]; then
@@ -48,7 +50,7 @@ function run_container() {
     --rm \
     --name "${CONTAINER_NAME}" \
     "${IMG_NAME}" \
-    tail -f /dev/null
+    tail -f /dev/null # Dummy command to keep the container running
 }
 
 # Parse flags
