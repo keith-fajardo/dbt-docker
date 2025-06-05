@@ -43,7 +43,6 @@ function run_container() {
   echo "Running container ${CONTAINER_NAME}..."
   docker run \
     -d \
-    -v dbt-profile:/root/.dbt/ \
     --env-file .env \
     --network ${CONTAINER_NETWORK} \
     --rm \
