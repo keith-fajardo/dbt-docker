@@ -5,8 +5,8 @@ demo_project:
       type: postgres
       host: "{{ env_var('DB_HOST') }}"
       post: 5432
-      user: "{{ env_var('DB_USER') }}"
+      user: "{{ env_var('DB_USERNAME') }}"
       password: "{{ env_var('DB_PASSWORD') }}"
       dbname: "{{ env_var('DB_NAME') }}"
-      schema: public
+      schema: "{{ env_var('DB_SCHEMA') }}"
       threads: 4
