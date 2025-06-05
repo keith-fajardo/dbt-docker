@@ -1,6 +1,6 @@
 #!/bin/bash
 CONTAINER_NAME="c-dbt-core"
-DOCKERHUB_REPOSITORY=keithfajardo/
+DOCKERHUB_REPOSITORY=keithfajardo/ # Change this to your Docker Hub repository
 IMG_NAME=${DOCKERHUB_REPOSITORY}i-dbt-core:python3.12.10
 CLEAN=false
 CONTAINER_NETWORK="dbt-net"
